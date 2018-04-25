@@ -1,6 +1,6 @@
 require 'sinatra'
-# require 'sinatra/reloader'
+require 'sinatra/reloader'
 
 get "/" do
-  "Hello World!"
+  erb :home
 end

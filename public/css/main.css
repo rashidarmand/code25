@@ -1,0 +1,28 @@
+body {
+  background-color: orange;
+  /* color: #2b7e35; */
+}
+
+/* Nav Bar Styling */
+nav {
+  height: 125px;
+  background-color: azure;
+  font-family: 'Yellowtail', cursive;
+}
+
+nav ul a {
+  font-size: 2rem;
+}
+
+.sidenav li a {
+  font-family: 'Yellowtail', cursive;
+  font-size: 2rem;
+}
+
+#nav-mobile {
+  margin-top: 30px;
+}
+
+#logo {
+  height: 100%;
+}
