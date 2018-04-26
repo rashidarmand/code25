@@ -1,5 +1,6 @@
 body {
   background-color: orange;
+  font-size: 1.2rem;
   /* color: #2b7e35; */
 }
 
@@ -25,4 +26,50 @@ nav ul a {
 
 #logo {
   height: 100%;
+}
+
+/* Footer Styling */
+.page-footer {
+  background-color: azure;
+}
+
+.waves-effect {
+  color: #1B5E20;
+}
+
+/* input:focus {
+  color: #1B5E20;
+} */
+
+.input-field>label {
+  color: #1B5E20;
+}
+
+input[type=text]:not(.browser-default), input[type=email]:not(.browser-default) {
+  border-bottom: 1px solid #1B5E20;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid #1B5E20;
+  box-shadow: 0 1px 0 0 #1B5E20;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly])+label , input[type=email]:not(.browser-default):focus:not([readonly])+label {
+  color: #1B5E20;
+}
+
+
+
+
+/* input[type=text] {
+  border: 1px solid #1B5E20;
+} */
+
+.btn, .btn:focus {
+  background: azure;
+  border: 1px solid #1B5E20;
+}
+
+.btn:hover {
+  background: #00c853;
 }
