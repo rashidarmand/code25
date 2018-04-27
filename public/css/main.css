@@ -1,13 +1,16 @@
 body {
-  background-color: orange;
+  background-color: #F5DA8A;
   font-size: 1.2rem;
-  /* color: #2b7e35; */
+  font-family: 'Montserrat', sans-serif;
+  color: #265557;
+  box-shadow: 2px 2px gray;
 }
+
 
 /* Nav Bar Styling */
 nav {
   height: 125px;
-  background-color: azure;
+  background-color: #F5DA8A;
   font-family: 'Yellowtail', cursive;
 }
 
@@ -15,9 +18,19 @@ nav ul a {
   font-size: 2rem;
 }
 
+#nav-mobile {
+  animation: fadeInRight;
+  animation-fill-mode: forwards;
+  animation-duration: 1.55s;
+}
+
 .sidenav li a {
   font-family: 'Yellowtail', cursive;
   font-size: 2rem;
+}
+
+.sidenav li a:hover {
+  background-color: #F5DA8A;
 }
 
 #nav-mobile {
@@ -28,18 +41,62 @@ nav ul a {
   height: 100%;
 }
 
+
+
+/* Home Page Parallax */
+.parallax-container .home {
+  height: 540px;
+}
+
+
+/* Pages Styling */
+.header.center.green-text.text-darken-4.ytail {
+  font-family: 'Yellowtail', cursive;
+  font-size: 7rem;
+}
+.header.center.green-text.text-darken-4 {
+  font-family: 'Yellowtail', cursive;
+  font-size: 7rem;
+}
+h1.center.ytail {
+  font-family: 'Yellowtail', cursive;
+  font-size: 5rem;
+}
+.ytail {
+  font-family: 'Yellowtail', cursive;
+  font-size: 2.5rem;
+}
+.center.ytail {
+  font-family: 'Yellowtail', cursive;
+  font-size: 2rem;
+}
+
+.newsletter {
+  background:azure;
+  height: 360px;
+  animation: fadeIn;
+  animation-fill-mode: forwards;
+  animation-duration: 1.55s;
+}
+
+.row1 {
+  opacity: 0;
+}
+
+.row2 {
+  opacity: 0;
+}
+
+
 /* Footer Styling */
 .page-footer {
-  background-color: azure;
+  background-color: #F5DA8A;
+  box-shadow: 2px 2px;
 }
 
 .waves-effect {
   color: #1B5E20;
 }
-
-/* input:focus {
-  color: #1B5E20;
-} */
 
 .input-field>label {
   color: #1B5E20;
@@ -58,18 +115,150 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label , input[type=
   color: #1B5E20;
 }
 
-
-
-
-/* input[type=text] {
-  border: 1px solid #1B5E20;
-} */
-
 .btn, .btn:focus {
   background: azure;
   border: 1px solid #1B5E20;
 }
 
 .btn:hover {
-  background: #00c853;
+  background: #69f0ae;
+}
+
+
+/* Home Page Styling */
+.row.our-story {
+  height: 500px;
+}
+
+.main-header {
+  opacity: 0;
+  animation: fadeInDown;
+  animation-fill-mode: forwards;
+  animation-duration: 1.55s;
+}
+
+.our-story {
+  opacity: 0;
+}
+
+.our-features {
+  opacity: 0;
+}
+
+
+/* Card Styling */
+.card .card-image img {
+  height: 225px;
+}
+
+/* Cakes Parallax */ 
+.parallax-container .cakes {
+  height: 350px;
+}
+
+.card-title.green-text.text-darken-4 {
+  font-family: 'Yellowtail', cursive;
+  font-size: 2rem;
+}
+    
+/* Keyframes */
+@keyframes fadeIn {
+  0% {
+     opacity: 0;
+  }
+  100% {
+     opacity: 1;
+  }
+}  
+
+@keyframes fadeInLeft {
+  0% {
+     opacity: 0;
+     transform: translateX(-100%);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+  }
+}  
+
+@keyframes fadeInRight {
+  0% {
+     opacity: 0;
+     transform: translateX(100%);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+  }
+}  
+
+@keyframes fadeInDown {
+  0% {
+     opacity: 0;
+     transform: translateY(-100%);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+     opacity: 0;
+     transform: translateY(100%);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(35deg);
+  }
+  50% {
+    transform: rotate(-35deg);
+  }
+  75% {
+    transform: rotate(35deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.fadeIn {
+  animation: fadeIn;
+  animation-fill-mode: forwards;
+  animation-duration: 1.55s;
+}
+
+.fadeInLeft {
+  animation: fadeInLeft;
+  animation-fill-mode: forwards;
+  animation-duration: 1.55s;
+}
+
+.fadeInRight {
+  animation: fadeInRight;
+  animation-fill-mode: forwards;
+  animation-duration: 1.55s;
+}
+
+.fadeInDown {
+  animation: fadeInDown;
+  animation-fill-mode: forwards;
+  animation-duration: 1.55s;
+}
+
+.fadeInUp {
+  animation: fadeInUp;
+  animation-fill-mode: forwards;
+  animation-duration: 1.55s;
 }
