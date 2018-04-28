@@ -21,7 +21,13 @@ nav ul a {
 #nav-mobile {
   animation: fadeInRight;
   animation-fill-mode: forwards;
-  animation-duration: 1.55s;
+  animation-duration: 3s;
+}
+
+.sidenav-trigger.right.green-text.text-darken-4 {
+  animation: fadeInRight;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
 }
 
 .sidenav li a {
@@ -39,8 +45,10 @@ nav ul a {
 
 #logo {
   height: 100%;
+  animation: fadeIn;
+  animation-fill-mode: forwards;
+  animation-duration: 3.2s;
 }
-
 
 
 /* Home Page Parallax */
@@ -151,6 +159,7 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label , input[type=
   height: 225px;
 }
 
+
 /* Cakes Parallax */ 
 .parallax-container .cakes {
   height: 350px;
@@ -160,7 +169,8 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label , input[type=
   font-family: 'Yellowtail', cursive;
   font-size: 2rem;
 }
-    
+   
+
 /* Keyframes */
 @keyframes fadeIn {
   0% {
