@@ -22,4 +22,4 @@ Mobile view:
 <img src="github/Mobile_View.png" alt="mobile demo" width="350">  
 
 
-### Link to website: [mjsbakery.herokuapp.com](mjsbakery.herokuapp.com)
+### Link to website: [mjsbakery.herokuapp.com](https://mjbakery.herokuapp.com/)
