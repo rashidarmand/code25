@@ -19,4 +19,7 @@ Desktop View:
 
 
 Mobile view:  
-<img src="github/Mobile_View.png" alt="mobile demo" width="350">
+<img src="github/Mobile_View.png" alt="mobile demo" width="350">  
+
+
+### Link to website: [mjsbakery.herokuapp.com](mjsbakery.herokuapp.com)
