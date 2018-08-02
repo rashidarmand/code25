@@ -43,3 +43,24 @@ window.addEventListener('scroll', (event) => {
     row2.forEach((element)=>{element.classList.add('fadeInLeft')})
   }
 });
+
+function typeAnimation() {
+  new Typed("#writing-text", {
+    strings: [
+      "improve your SEO.", "streamline your marketing strategy.", "increase sales with paid advertising.", "grow your following on social media", "be the 25% !"
+    ],
+    // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+    stringsElement: null,
+    // typing speed
+    typeSpeed: 30,
+    contentType: 'text',
+    onComplete: function() {
+      console.log("yeah")
+      $("#writing-text").css({"color": "#d9d9d9", "background-color": "black"});
+    },
+    preStringTyped: function() {},
+    onStringTyped: function() {}
+  });
+}
+
+typeAnimation();
