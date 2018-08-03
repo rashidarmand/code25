@@ -147,6 +147,7 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label , input[type=
 .btn, .btn:focus {
   background: azure;
   border: 1px solid #265557;
+  font-family: 'Michroma', sans-serif;
 }
 
 .btn:hover {
