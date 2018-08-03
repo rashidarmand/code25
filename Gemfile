@@ -4,7 +4,5 @@ source 'https://rubygems.org' do
 
   gem "sinatra"
   gem "sinatra-contrib"
-  gem "googlebooks"
   gem "sendgrid-ruby"
-  gem 'typedjs-rails', '~> 1.0', '>= 1.0.4'
 end
