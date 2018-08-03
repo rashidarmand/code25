@@ -32,7 +32,7 @@ post "/contact" do
   @message = params[:message]
 
   from = Email.new(email: 'messages@code25.com')
-  to = Email.new(email: 'rashidharmand@gmail.com')
+  to = Email.new(email: 'geno.miller026@gmail.com')
   subject = "New Message - Code 25"
   content = Content.new(type: 'text/html', 
     value: "<p><h2>Hi Geno,</h2>
