@@ -12,8 +12,8 @@ let row2 = document.querySelectorAll('.row2')
 
 
 // Back to top button scroll behavior
-backToTop.addEventListener('click', (event) => {
-  document.querySelector('#logo').scrollIntoView({ behavior: 'smooth' });
+backToTop.addEventListener('click', () => {
+  document.querySelector('nav').scrollIntoView({ behavior: 'smooth' });
 });
 
 

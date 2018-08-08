@@ -9,16 +9,19 @@ get "/" do
   erb :home
 end
 
-get "/work" do
+get "/lead-gen" do
   erb :cookies
 end
 
-get "/mission" do
+get "/web-design" do
   erb :cakes
 end
 
+get "/content" do
+  erb :muffins
+end
 
-get "/services" do
+get "/case-studies" do
   erb :muffins
 end
 
@@ -30,6 +33,7 @@ post "/contact" do
   @name = params[:name]
   @email = params[:email]
   @message = params[:message]
+  @best_time_to_talk = params[:best_time_to_talk]
 
   from = Email.new(email: 'messages@code25.com')
   to = Email.new(email: 'geno.miller026@gmail.com')
@@ -52,6 +56,10 @@ post "/contact" do
     <strong>Message:</strong>
     <br>
     - #{@message}
+    <br>
+    <strong>Best Time to Talk:</strong>
+    <br>
+    - #{@best_time_to_talk}
     <br>
     <br>
     Regards,
