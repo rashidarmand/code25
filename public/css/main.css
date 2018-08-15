@@ -8,9 +8,6 @@ body {
 
 
 /* Nav Bar Styling */
-/* .text-darken-4{
-  color: #265557;
-} */
 nav {
   height: 70px;
   background-color: black;
@@ -88,14 +85,35 @@ div.user-view{
   animation-duration: 1s;
 }
 
-ul#dropdown1.dropdown-content:active, ul#dropdown1.dropdown-content{
-  position: absolute;
+header{
+  position: relative;
   z-index: 9999;
 }
 
-#index-banner{
-  position: relative;
-  /* opacity: 0.99; */
+.sidenav div.collapsible-header{
+  font-family: 'Michroma', sans-serif; 
+  font-size: 1rem;
+}
+
+.sidenav div.collapsible-header:hover{
+  background: #FE501D;
+}
+
+.sidenav div.collapsible-body{
+  background: black;
+}
+
+.sidenav:last-child a{
+  padding: 0px 16px;
+}
+
+.dropdown-content{
+  background: black;
+  top: -65px;
+}
+
+.dropdown-content li>a{
+  color: #d9d9d9;
 }
 
 
@@ -119,19 +137,6 @@ ul#dropdown1.dropdown-content:active, ul#dropdown1.dropdown-content{
 .home2{
   color: #265557;
 }
-/* 
-.home-container{
-  padding: 80px;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.home-container2{
-  padding: 180px;
-} */
 
 
 /* Pages Styling */
@@ -161,7 +166,7 @@ h1.center.ytail {
 }
 .ytail {
   font-family: 'Michroma', sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 .center.ytail {
   font-family: 'Michroma', sans-serif;
@@ -207,7 +212,11 @@ h1.center.ytail {
 }
 
 .page-footer a:hover {
-  filter: saturate(800%);
+  color: #FE501D;
+}
+
+.footer-copyright .col.l4.s8{
+  font-size: 1rem;
 }
 
 .waves-effect {
@@ -244,6 +253,20 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label , input[type=
 }
 
 
+/* FAQ Page Styling */
+div#faq-section div.collapsible-header{
+  background: black;
+  /* font-family: 'Michroma', sans-serif; 
+  font-size: 1rem; */
+}
+
+div#faq-section div.collapsible-header:hover{
+  background: #FE501D;
+}
+
+#schedule-consult span.bold{
+  text-decoration: underline;
+}
 
 /* Home Page Styling */
 .block {
@@ -271,6 +294,70 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label , input[type=
 .card .card-image img {
   height: 225px;
 }
+
+/* Web Dev Styling */ 
+.web-dev-feature{
+  margin: 15px 0px;
+}
+
+.webdev-img{
+  max-width: 100%;
+  height: 100px;
+}
+
+.package-disclaimer{
+  font-size: .95rem;
+}
+
+.feat-descr{
+  color: #FE501D;
+}
+
+ul.tabs{
+  background: black;
+}
+
+.tabs .tab a{
+  color: #FE501D;
+}
+
+.tabs .tab a.active, .tabs .tab a.active:hover{
+  background: #FE501D;
+  color: #d9d9d9;
+  animation: none;
+}
+
+.tabs .tab a:hover{
+  color: #d9d9d9;
+  animation: wiggle;
+  animation-fill-mode: forwards;
+  animation-duration: .35s;
+}
+
+.tabs .indicator{
+  background: #d9d9d9;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+  background: #FE501D;
+  color: #d9d9d9;
+}
+
+/* Case Studies Styling */ 
+.client-box{
+  display: flex;
+  justify-content: space-around;
+}
+
+.client-box img{
+  /* margin: 10px 20px; */
+}
+
+.client-adj{
+  height: 50px;
+  width: 180px;
+}
+
 
 
 /* Cakes Parallax */ 
@@ -343,13 +430,13 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label , input[type=
     transform: rotate(0deg);
   }
   25% {
-    transform: rotate(35deg);
+    transform: rotate(20deg);
   }
   50% {
-    transform: rotate(-35deg);
+    transform: rotate(-20deg);
   }
   75% {
-    transform: rotate(35deg);
+    transform: rotate(20deg);
   }
   100% {
     transform: rotate(0deg);

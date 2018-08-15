@@ -9,12 +9,20 @@ get "/" do
   erb :home
 end
 
+get "/our-team" do
+  erb :thanks
+end
+
+get "/faq" do
+  erb :faq
+end
+
 get "/lead-gen" do
   erb :cookies
 end
 
 get "/web-design" do
-  erb :cakes
+  erb :web_design
 end
 
 get "/content" do
@@ -22,7 +30,7 @@ get "/content" do
 end
 
 get "/case-studies" do
-  erb :muffins
+  erb :case_studies
 end
 
 get "/contact" do
