@@ -231,6 +231,10 @@ input.select-dropdown.dropdown-trigger{
   color: #d9d9d9;
 }
 
+.dropdown-content li>span{
+  color: #d9d9d9;
+}
+
 svg.caret{
   background: #d9d9d9;
 }
