@@ -174,7 +174,7 @@ h1.center.ytail {
 }
 
 .newsletter {
-  background:azure;
+  background: black;
   height: 360px;
   animation: fadeIn;
   animation-fill-mode: forwards;
@@ -224,20 +224,44 @@ h1.center.ytail {
 }
 
 .input-field>label {
-  color: #265557;
+  color: #d9d9d9;
 }
 
-input[type=text]:not(.browser-default), input[type=email]:not(.browser-default) {
-  border-bottom: 1px solid #265557;
+input.select-dropdown.dropdown-trigger{
+  color: #d9d9d9;
 }
 
-input[type=text]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]) {
-  border-bottom: 1px solid #265557;
-  box-shadow: 0 1px 0 0 #265557;
+svg.caret{
+  background: #d9d9d9;
+}
+
+.calltimes>label{
+  top: -15px;
+}
+
+form{
+  margin-bottom: 150px;
+}
+
+ul#review-details li{
+  list-style-type: square;
+  padding-left: 35px;
+}
+
+input[type=text]:not(.browser-default), input[type=email]:not(.browser-default), option:not(.browser-default) {
+  border-bottom: 1px solid #d9d9d9;
+  color: #d9d9d9;
+  
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), option:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid #FE501D;
+  box-shadow: 0 1px 0 0 #FE501D;
+  color: #d9d9d9;
 }
 
 input[type=text]:not(.browser-default):focus:not([readonly])+label , input[type=email]:not(.browser-default):focus:not([readonly])+label {
-  color: #265557;
+  color: #d9d9d9;
 }
 
 .btn, .btn:focus {
