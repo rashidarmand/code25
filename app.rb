@@ -9,47 +9,53 @@ get "/" do
   erb :home
 end
 
-get "/our-team" do
-  erb :thanks
-end
+# get "/our-team" do
+#   erb :thanks
+# end
 
 get "/faq" do
   erb :faq
 end
 
-get "/lead-gen" do
-  erb :cookies
-end
+# get "/lead-gen" do
+#   erb :lead_gen
+# end
 
 get "/web-design" do
   erb :web_design
 end
 
-get "/content" do
-  erb :muffins
-end
+# get "/content" do
+#   erb :lead_gen
+# end
 
 get "/case-studies" do
   erb :case_studies
 end
 
 get "/contact" do
-  erb :newsletter
+  erb :contact
 end
 
 post "/contact" do
   @name = params[:name]
   @email = params[:email]
+  @company = params[:company]
   @message = params[:message]
-  @best_time_to_talk = params[:best_time_to_talk]
+  @services = params[:services].join(', ')
+  @first_choice = params[:fc_hr] + ':' + params[:fc_min] + ' ' + params[:fc_am_pm]
+  @second_choice = params[:sc_hr] + ':' + params[:sc_min] + ' ' + params[:sc_am_pm]
 
   from = Email.new(email: 'messages@code25.com')
-  to = Email.new(email: 'geno.miller026@gmail.com')
+  to = Email.new(email: 'rashidharmand@gmail.com')
   subject = "New Message - Code 25"
   content = Content.new(type: 'text/html', 
-    value: "<p><h2>Hi Geno,</h2>
-    <br>
-    A new message was submitted to Code 25 on #{Time.now.strftime("%A, %m/%d/%Y at %I:%M%p")}!</p>
+    value: 
+    "<p>
+      <h2>Hi Rashid,</h2>
+      <br>
+      A new message was submitted to Code 25 on #{Time.now.strftime("%A, %m/%d/%Y at %I:%M%p")}!
+    </p>
     <br>
     <strong>Name:</strong>
     <br>
@@ -61,17 +67,30 @@ post "/contact" do
     - #{@email}
     <br>
     <br>
+    <strong>Company:</strong>
+    <br>
+    - #{@company}
+    <br>
+    <br>
+    <strong>Best Time To Call:</strong>
+    <br>
+    - First Choice: #{@first_choice}
+    <br>
+    - Second Choice: #{@second_choice}
+    <br>
+    <br>
+    <strong>Services:</strong>
+    <br>
+    - #{@services}
+    <br>
+    <br>
     <strong>Message:</strong>
     <br>
     - #{@message}
     <br>
-    <strong>Best Time to Talk:</strong>
-    <br>
-    - #{@best_time_to_talk}
-    <br>
     <br>
     Regards,
-    <br>
+    <br> <br>
     - Code 25
     </p>")
   mail = Mail.new(from, subject, to, content)

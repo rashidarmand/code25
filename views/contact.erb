@@ -1,4 +1,4 @@
-<%# Newsletter %>
+<%# Contact %>
 <br><br>
 <div class="newsletter">
   <div class="container">
@@ -22,12 +22,12 @@
         <br><br>
         <form action="/contact" method="POST" class="col l12">
           <div class="input-field col s12">
-            <select multiple>
+            <select name="services[]" multiple>
               <option value="" disabled selected>Choose your option</option>
-              <option value="1">Lead Gen</option>
-              <option value="2">Web Development & Design</option>
-              <option value="2">Content Writing</option>
-              <option value="3">Not Sure</option>
+              <option value="lead gen">Lead Gen</option>
+              <option value="web development">Web Development & Design</option>
+              <option value="content writing">Content Writing</option>
+              <option value="not sure">Not Sure</option>
             </select>
             <label>Interested Services</label>
           </div>
@@ -36,7 +36,7 @@
           <div class="input-field col s12 calltimes">
             <label>First Choice</label>
             <div class="input-field col s4">
-              <select>
+              <select name="fc_hr">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -52,7 +52,7 @@
               </select>
             </div>
             <div class="input-field col s4">
-              <select>
+              <select name="fc_min">
                 <option value="00" selected>00</option>
                 <option value="15">15</option>
                 <option value="30">30</option>
@@ -60,7 +60,7 @@
               </select>
             </div>
             <div class="input-field col s4">
-              <select>
+              <select name="fc_am_pm">
                 <option value="AM" selected>AM</option>
                 <option value="PM">PM</option>
               </select>
@@ -69,7 +69,7 @@
           <div class="input-field col s12 calltimes">
             <label>Second Choice</label>
             <div class="input-field col s4">
-              <select>
+              <select name="sc_hr">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -85,7 +85,7 @@
               </select>
             </div>
             <div class="input-field col s4">
-              <select>
+              <select name="sc_min">
                 <option value="00" selected>00</option>
                 <option value="15">15</option>
                 <option value="30">30</option>
@@ -93,45 +93,12 @@
               </select>
             </div>
             <div class="input-field col s4">
-              <select>
+              <select name="sc_am_pm">
                 <option value="AM" selected>AM</option>
                 <option value="PM">PM</option>
               </select>
             </div>
           </div>
-          <%# <div class="input-field col s12 calltimes">
-            <label>Third Choice</label>
-            <div class="input-field col s4">
-              <select>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10" selected>10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-              </select>
-            </div>
-            <div class="input-field col s4">
-              <select>
-                <option value="00" selected>00</option>
-                <option value="15">15</option>
-                <option value="30">30</option>
-                <option value="45">45</option>
-              </select>
-            </div>
-            <div class="input-field col s4">
-              <select>
-                <option value="AM" selected>AM</option>
-                <option value="PM">PM</option>
-              </select>
-            </div>
-          </div> %>
           <div class="input-field col s12">
             <input name="name" id="name" type="text" class="validate" required>
             <label for="name">Name</label>
